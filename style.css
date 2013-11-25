@@ -4,62 +4,55 @@
  html, body { margin: 0; padding: 0; }
 html{
 
-background: #7db9e8; /* Old browsers */
-background: -moz-linear-gradient(top, #7db9e8 0%, #207cca 82%, #1e5799 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(82%,#207cca), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #7db9e8 0%,#207cca 82%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #7db9e8 0%,#207cca 82%,#1e5799 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #7db9e8 0%,#207cca 82%,#1e5799 100%); /* IE10+ */
-background: linear-gradient(to bottom, #7db9e8 0%,#207cca 82%,#1e5799 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
-
-/*		background-image: url("pinup.png");
-	background-size: 400px 600px;
-
-	background-repeat: no-repeat;
-	background-position: left 0px bottom -10px;*/
 }
+
 h3{
-		font-family: Piedra, sans-serif;
-		color:#B2943C;
+		font-family: 'Waiting for the Sunrise', sans-serif;
+		color:#c06140;
 		text-transform:uppercase;
+		font-weight:bold;
 }
 header{
 	background-image:url("banner.png");
 	background-size:760px 245px;
 	height:245px;
 	background-repeat:no-repeat;
-	box-shadow:0px 0px 10px black;
 	border: 10px solid #87CEEB;
+	color:#c06140;
+	background-color:#e3ccac;
+}
+.sidebar{
+	font-family: sans-serif;
 }
 header > h1{
-		font-family: Piedra, sans-serif;
+		font-family: 'Waiting for the Sunrise', sans-serif;
 		text-transform:uppercase;
-		
 		font-size: 45px;
 		margin: 30px;
 		margin-left: 40px;
 		position: relative;
 		top: 30px;
+		font-weight:bold;
 	}
 header > h2{
-		font-family: Piedra, sans-serif;
+		font-family: 'Waiting for the Sunrise', sans-serif;
 		position: relative;
 	top: 20px;
+	text-transform:lowercase;
 	margin-left:40px;
+	font-weight:bold;
 }
 a{
 	text-decoration:underline;
-	color:#966F2B;
+	color:#c06140;
 }
 a:hover{
 	text-decoration:none;
-	color:#966F2B;	
+	color:#c06140;	
 }
 p{
-font-family: 'Waiting for the Sunrise',sans-serif;
-font-weight: bold;
-color: #966F2B;
+font-family: sans-serif;
+color: #c06140;
 font-size: 18px;
 line-height: 20px;
 }
@@ -67,52 +60,55 @@ line-height: 20px;
 .page-wrapper{
 	z-index:3;
 	width:760px;
-	padding:20px;
+	padding:40px 20px 20px 20px;
 	margin: 0 auto;
 }
 .preamble > h3, .explanation > h3, .participation > h3, .benefits > h3{
 }
 
-.summary, .preamble, .explanation, .participation, .benefits, .requirements, .sidebar{
+footer, .summary, .preamble, .explanation, .participation, .benefits, .requirements, .sidebar{
 	border:10px solid #87CEEB;
 	position:relative;
-	background-color:#FFF9D8;
+	background-color:#e3ccac;
 	padding:0 20px 20px 20px;
-	box-shadow:0 0 10px black;
 	margin-top:20px;
+	font-weight:400;
 }
  .preamble, .explanation, .participation, .benefits{
  	width:400px;
  }
+/* .requirements{
+ 	top:-210px;
+ }*/
 .sidebar{
-	position:static;
+/*	position:static;
 	  transition-property: top;
   	transition-duration: 0.5s;
  	 transition-delay: 0.1s;
-	top:-280px;
-	/*	left:50% - 125px;*/
+	top:-350px;
 	width:700px;
 	margin-top:0px;
 
-	/*left:-10px;*/
 	position:fixed;
 	z-index:1001;
 	padding:20px;
-	height:320;
+	height:320;*/
 }
 .sidebar:hover{
-  transition-property: top;
+/*  transition-property: top;
   transition-duration: 0.5s;
   transition-delay: 0.1s;
-  top:20px;
+  top:20px;*/
 }
 .sidebar ul{
 	list-style:none;
 	padding:0px;
 }
+
 .sidebar ul li{
 
 }
+
 .sidebar .wrapper .design-selection{
 	float: left;
 	width: 50%;
@@ -128,19 +124,12 @@ width:24%;
 .sidebar .wrapper div h3{
 	margin-top:0px;
 }
-/*
 .explanation{
-	left:300px;
-	top:-50px;
+	margin-top:-50px;
 }
 .participation{
-	top:-80px;
+	margin-top:-30px;
 }
 .benefits{
-	left:300px;
-	top:-130px;
-}
-*/
-.requirements:hover,.benefits:hover, .explanation:hover, .preamble:hover, .participation:hover{
-	z-index:999;
+	margin-top:-50px;
 }
